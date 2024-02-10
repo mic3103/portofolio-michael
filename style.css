@@ -248,6 +248,7 @@ i:hover {
         padding-left: 50px;
         padding-top: 30px;
         max-width: 400px;
+        padding-right: 30px;
     }
     
     .hero h3{
@@ -263,6 +264,7 @@ i:hover {
         margin-left: 50px;
         margin-top: 20px;
         transition: 1s;
+        margin-right: 30px;
     }
 
 
