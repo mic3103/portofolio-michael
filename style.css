@@ -88,7 +88,7 @@ body {
 
 .hero h1{
     color: #fff;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 30px;
     max-width: 600px;
 }
@@ -103,7 +103,7 @@ body {
 .duarr {
     height: 60px;
     border-radius: 100px;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: 20px;
     transition: 1s;
 }
@@ -245,7 +245,7 @@ i:hover {
 
     .hero h1{
         color: #fff;
-        padding-left: 30px;
+        padding-left: 50px;
         padding-top: 30px;
         max-width: 400px;
     }
@@ -257,6 +257,13 @@ i:hover {
         max-width: 400px;
     }
 
+    .duarr {
+        height: 60px;
+        border-radius: 100px;
+        margin-left: 50px;
+        margin-top: 20px;
+        transition: 1s;
+    }
 
 
     .gambar-utama {
