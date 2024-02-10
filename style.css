@@ -183,7 +183,7 @@ th, td {
 footer {
     align-items: center;
     text-align: center;
-    background-color: #adbc9f9c;
+    background-color: #ffffff9c;
 }
 
 footer h4, h3{
@@ -237,7 +237,7 @@ i:hover {
       .hero {
         display: flex;
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 3px;
         justify-content: space-between;
         padding-bottom: 50px;
         align-items: center;
@@ -265,7 +265,9 @@ i:hover {
         margin-top: 20px;
         transition: 1s;
         margin-right: 30px;
+        margin-bottom: 30px;
     }
+
 
 
     .gambar-utama {
