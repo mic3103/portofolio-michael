@@ -88,7 +88,7 @@ body {
 
 .hero h1{
     color: #fff;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 30px;
     max-width: 600px;
 }
@@ -103,7 +103,7 @@ body {
 .duarr {
     height: 60px;
     border-radius: 100px;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 20px;
     transition: 1s;
 }
@@ -253,7 +253,7 @@ i:hover {
 
     .hero h1{
         color: #fff;
-        padding-left: 50px;
+        padding-left: 30px;
         padding-top: 30px;
         max-width: 400px;
         padding-right: 30px;
@@ -269,7 +269,7 @@ i:hover {
     .duarr {
         height: 60px;
         border-radius: 100px;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-top: 20px;
         transition: 1s;
         margin-right: 30px;
