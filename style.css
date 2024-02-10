@@ -133,6 +133,14 @@ body {
     margin: 40px;
 }
 
+.PROJEKNYA img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 50px;
+}
+
 .Gambar img{
     max-width: 300px;
     max-height: 300px;
