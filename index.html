@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael's Portofolio</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="asu">
+        <h2 class="logo"></h2>
+
+        <div class="menu-toggle">&#9776</div>
+
+        <nav class="navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#myserv">Service</a>
+            <a href="#Penghargaan">Achievement</a>
+            <a href="#Galeri">Gallery</a>
+        </nav>
+    </header>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.navbar');
+    
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); 
+        });
+    </script>
+    <div class="hero" id="Home">
+        <div class="tulisan-hero">
+           
+            <h1>HI! I AM MICHAEL SATRIA NUGROHO, SMA MARSUDIRINI STUDENT. <br> I AM <span id="typewriter"></span><span class="cursor">|</span></h1> 
+            <h3>6 Years of experience in Music &Video Editing and 2 Years of experience in front end web developing.</h3>
+            <a href="https://api.whatsapp.com/send?phone=6282111557981&text=P"><img class="duarr" src="./img/download.png" alt=""></a>
+        </div>
+        <img src="./img/UGM_PORTO.png" alt="" class="gambar-utama">
+    </div>
+
+
+    <div id="about-me" class="about-me">
+        <img src="./img/1720507997154.jpg" alt="" class="foto-about-me hidden">
+        <div class="abtme-kanan hidden">
+            <h1>About Me</h1>
+            <div style="background-color: rgb(255, 249, 249); height: 8px; width: 120px; border-radius: 10px; margin-bottom: 20px;"></div>
+            <p>My name is Michael Satria Nugroho, I am a student of SMA Marsudirini. I am a person who likes to learn and explore new things. I am interested in music and video editing, and I have been doing it for 6 years. I also have experience in front-end web development for 2 years. </p>
+
+            <div class="judul-tab-about">
+                <p class="link-tab" onclick="openTab('skills', this)">
+                    Skills
+                </p>
+                <p class="link-tab" onclick="openTab('experience', this)">
+                    Experience
+                </p>
+                <p class="link-tab" onclick="openTab('education', this)">
+                    Education
+                </p>
+                <p class="link-tab" onclick="openTab('awards', this)">
+                    Awards
+                </p>
+                <p class="link-tab" onclick="openTab('works', this)">
+                    Work
+                </p>
+            </div>
+
+            <div id="skills" class="tab-isi" >
+                <ul>
+                    <li><span><b>UI/UX and Web Dev</b></span><br>Design and Code Web Interface and its function</li>
+                    <li><span><b>Video Editing</b></span> <br>Editing and Creating Video Content</li>
+                    <li><span><b>Music Creator</b></span>
+                    <br>Creating Music and Soundtrack</li>
+                </ul>
+            </div>
+
+            <div id="experience" class="tab-isi">
+                <ul>
+                    <li><span><b>2022</b></span><br>Extracurricular coding mentor for a day at SMA MARSUDIRINI BOGOR.</li>
+                    <li><span><b>2023-2024</b></span><br>ICT Development in SMA MARSUDIRINI BOGOR Student Council</li>
+                    <li><span><b>M-Fest Ecosystem (2023)</b></span><br>Multimedia</li>
+                    <li><span><b>M-Fest Dwipantara (2024)</b></span>
+                    <br>Multimedia</li>
+                </ul>
+            </div>
+
+            <div id="education" class="tab-isi">
+                <ul>
+                    <li><span><b>2020 - 2023</b></span><br>Marsudirini Bogor Junior High School</li>
+                    <li><span><b>2023 - Now</b></span><br>Marsudirini Bogor Senior High School</li>
+                </ul>
+            </div>
+
+            <div id="awards" class="tab-isi">
+                <ul>
+                    <li><span><b>2017</b></span><br>PENGHARGAAN SISWA TELADAN TAHUN AJARAN 2017-2018 Kelas IV @SD KATOLIK PERMATA BUNDA CIMANGGIS</li>
+                    <li><span><b>2018</b></span><br>RANK I LOMBA VOCAL GROUP PERAYAAN NATAL PAROKI SANTO THOMAS KELAPA DUA DEPOK</li>
+                    <li><span><b>2019</b></span><br>RANK III JUARA RENANG GAYA BEBAS TINGKAT SD KATOLIK PERMATA BUNDA CIMANGGIS KELAS V - VI <br>RANK III JUARA RENANG GAYA DADA TINGKAT SD KATOLIK PERMATA BUNDA CIMANGGIS KELAS V - VI</li>
+                    <li><span><b>2022</b></span><br>Rank III Band Competition @Fonsvinacent 63; Marsudirini Fons Vitae 1 Matraman <br> RANK III Band Competition @MFest : Urozion; SMA MARSUDIRINI BOGOR</li>
+                    <li><span><b>2024</b></span><br>RANK II WEB DESIGN COMPETITION @KBOF 2024; IBI KESATUAN BOGOR <br>
+                    RANK III BAND COMPETITION @LUSTRUM VI MARSUDIRINI BEKASI <br>RANK I BAND COMPETITION @MFEST DWIPANTARA 2024; SMA MARSUDIRINI BOGOR</li>
+                    <li><span><b>2025</b></span><br>RANK I BAND COMPETITION @EDZHAR SDH CUP BOGOR 2025</li>
+                </ul>
+            </div>
+
+            <div id="works" class="tab-isi">
+                <ul>
+                    <li>INCH NOTE ANDROID APP</li>
+                    <li>ISOLATED (SHORT MOVIE) - TAHOE TEMPE PRODUCTION - RANK II AT MFEST UROZION</li>
+                    <li>CHILLING ON BATAVIA (NO COPYRIGHT INSTRUMENTAL)</li>
+                    <li>RAINY DAYS (NO COPYRIGHT INSTRUMENTAL)</li>
+                    <li>SAMUDERA WAKTU (SHORT MOVIE) - TAHOE TEMPE PRODUCTION</li>
+                    <li>WASTRA NUSANTARA (WEBSITE) - RANK II AT KBOF 2024</li>
+                    <li>EXOTIC NIAS (WEBSITE)</li>
+                    <li>NUSA HANDAYA (WEBSITE)</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function openTab(tabName, element) {
+                // Sembunyikan semua tab isi
+                var tabs = document.getElementsByClassName("tab-isi");
+                for (var i = 0; i < tabs.length; i++) {
+                    tabs[i].style.display = "none";
+                }
+        
+                // Hapus class 'active' dari semua tombol tab
+                var tabLinks = document.getElementsByClassName("link-tab");
+                for (var i = 0; i < tabLinks.length; i++) {
+                    tabLinks[i].classList.remove("active");
+                }
+        
+                // Tampilkan tab yang dipilih
+                document.getElementById(tabName).style.display = "block";
+        
+                // Tambahkan class 'active' ke tab yang dipilih
+                element.classList.add("active");
+            }
+        
+            // Menampilkan tab pertama secara default
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelector(".link-tab").click();
+            });
+        </script>
+        
+    </div>
+
+    <div id="myserv">
+        <h1>My Services</h1>
+        <div style="background-color: rgb(167, 255, 196); height: 8px; width: 150px; border-radius: 10px;margin-top: 15px; margin-bottom: 75px; margin-left: auto; margin-right: auto;"></div>
+        <div class="servicw">
+            <a class="item-serv" href="https://api.whatsapp.com/send?phone=6282111557981&text=Hi%2C%20I%27m%20interested%20in%20your%20web%20design%20services!">
+                <div >
+                    <img src="./img/coding_logo.png" alt="">
+                    <h3>Web Design</h3>
+                    <p>Creative & professional web design for engaging, responsive, and effective websites.</p>
+                </div>
+            </a>
+            <a class="item-serv" href="https://api.whatsapp.com/send?phone=6282111557981&text=Hi%2C%20I%27m%20interested%20in%20your%20video%20editing%20services!">
+                <div>
+                    <img src="./img/clapperboard.png" alt="">
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing for various needs: promotion, documentation, social media, etc</p>
+                </div>
+            </a>
+            <a class="item-serv" href="">
+                <div>
+                    <img src="./img/music.png" alt="">
+                    <h3>Music and Sound Editing</h3>
+                    <p>Professional music & sound editing: mixing, mastering, audio cleaning, sound effects.</p>
+                </div>
+            </a>
+           
+        </div>
+    </div>
+    
+    
+    <div id="contact-me">
+        <div class="cml">
+         <h1>Contact Me</h1>   
+         <div class="itemcml">
+             <img src="./img/phone.png" alt="">
+             <p>+6282111557981</p>
+         </div>
+         
+         <div class="itemcml">
+             <img src="./img/mail.png" alt="">
+             <p>michaelsatrian@gmail.com</p>
+         </div>
+         
+         <div class="itemcml">
+            <a href="https://www.instagram.com/m_satriach31/"><img class="sos" src="./img/ig.png" alt=""></a>
+            <a href="https://www.facebook.com/michael.s.nugroho.16/"><img class="sos" src="./img/fb.png" alt=""></a>
+            <a href="https://www.youtube.com/@MichaelSatriaChanel"><img class="sos" src="./img/yt.png" alt=""></a>
+            <a href="https://github.com/mic3103"><img class="sos" src="./img/gh.png" alt=""></a>
+         </div>
+        </div>
+        
+        <div class="cmr">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" id="" placeholder="Your Name">
+                <input type="email" name="Email" id="" placeholder="Email">
+                <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                <span id="msg"></span>
+            </form>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwXb9PCiK9FoqfqxZivYP7SE2rvsLlhmUQthdF-vQOLq8CSgPjqR51JL69Gt7Tck-4TbA/exec';
+                const form = document.forms['submit-to-google-sheet'];
+                const msg = document.getElementById('msg');
+              
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Pesan Terkirim!";
+                            msg.style.color = "green";
+                            setTimeout(() => {
+                                msg.innerHTML = "";
+                            }, 3000);
+                            form.reset();
+                        })
+                        .catch(error => {
+                            msg.innerHTML = "Gagal mengirim pesan!";
+                            msg.style.color = "red";
+                        });
+                });
+              </script>
+        </div>
+    </div>
+
+    <footer>
+        <p><span style="color: #ff2f2f;"><b>&copy;2025</b></span> Michael Satria Nugroho</p>
+        <p><i>Depok, West Java, Indonesia</i></p>
+    </footer>
+
+
+
+</body>
+</html>
