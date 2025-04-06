@@ -227,6 +227,7 @@ body {
     display: none; /* Sembunyikan semua tab isi secara default */
     margin-top: 25px;
     animation: slideInRight 200ms ease-out forwards;
+    margin-bottom: 20px;
 }
 
 .tab-isi span{
@@ -361,6 +362,13 @@ body {
     margin-bottom: 20px;
 }
 
+.pdf-download{
+    color: white;
+    text-decoration: none;
+    background-color:#ff5e3a;
+    padding: 10px;
+}
+
 #contact-me{
     background-color: #0a0c0a;
     display: flex;
@@ -416,6 +424,7 @@ form input,form textarea{
 
 footer{
     background-color: #262626;
+    text-align: center;
     color: white;
     padding: 40px;
 }
