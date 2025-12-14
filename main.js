@@ -9,7 +9,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-const roles = ["WEB DEVELOPER", "VIDEO EDITOR", "MUSIC PRODUCER", "GRAPHIC DESIGNER"];
+const roles = ["WEB DEVELOPER", "VIDEOGRAPHER", "PHOTOGRAPHER", "MUSIC PRODUCER"];
     let index = 0;
     let charIndex = 0;
     let currentText = "";
@@ -35,7 +35,7 @@ const roles = ["WEB DEVELOPER", "VIDEO EDITOR", "MUSIC PRODUCER", "GRAPHIC DESIG
             setTimeout(typeEffect, 1000);
         }
 
-        typewriter.innerHTML = `<mark>${currentText}</mark>`;
+        typewriter.innerHTML = `<mark style="Background-color: #22e6e2ff; color:#005461;">${currentText}</mark>`;
     }
 
     document.addEventListener("DOMContentLoaded", () => {

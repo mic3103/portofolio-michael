@@ -70,7 +70,7 @@ body {
     justify-content: space-between;
     padding-bottom: 50px;
     animation: fade-in 3s ease forwards;
-    background: linear-gradient( #003459, rgba(0, 0, 0, 0.809) ), url('./img/image-removebg-preview.png');
+    background: linear-gradient(135deg, #005461 0%, #018790 50%, #005461 100%);
     background-size: 10%;
     height: 100vh;
 }
@@ -115,7 +115,7 @@ body {
 }
 
 .hero h3{
-    color: #88cb54;
+    color: #08dedb;
     padding-left: 30px;
     padding-top: 30px;
     max-width: 600px;
@@ -148,7 +148,9 @@ body {
     padding-top: 75px;
     padding-bottom: 75px;
     display: flex;
-    background: linear-gradient( #000000, #212921 ), url('./img/image-removebg-preview.png');
+    background-color: #02414a;
+
+
 }
 
 .foto-about-me{
@@ -231,13 +233,22 @@ body {
 }
 
 .tab-isi span{
-    color: #88cb54;
+    color: #00B7B5;
     font-size: 19px;
 }
 
 .tab-isi li{
     color: #fff;
     margin-bottom: 10px;
+}
+
+.tab-isi a{
+    color: #00B7B5;
+    text-decoration: none;
+}
+
+.tab-isi a:hover{
+    text-decoration: underline;
 }
 
 .active {
@@ -255,37 +266,19 @@ body {
 }
 
 #myserv{
-    background-color:#181c18;
+    background-color:#0e292e;
     padding-top: 75px;
     padding-bottom: 75px;
 }
 
 #myserv h1{
     font-size: 42px;
-    color: #88cb54;
+    color: #00B7B5;
     text-align: center;
 }
 
 .servicw{
     display: flex;
-}
-
-.item-serv{
-    background-color: #354235;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    width: 370px;
-    color: white;
-    text-decoration: none;
-    transition: 1.5s;
-}
-
-.item-serv:hover{
-    transform:scale(1.1);
-    cursor: pointer;
-    box-shadow: 0px 0px 58px 12px rgb(231, 255, 219);
 }
 
 .item-serv img{
@@ -327,7 +320,7 @@ body {
 }
 
 .item-serv{
-    background-color: #354235;
+    background-color: #018790;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -341,7 +334,7 @@ body {
 .item-serv:hover{
     transform:scale(1.1);
     cursor: pointer;
-    box-shadow: 0px 0px 58px 12px rgb(231, 255, 219);
+    box-shadow: 0px 0px 58px 12px #F4F4F4;
 }
 
 .item-serv img{
@@ -397,36 +390,6 @@ body {
 .cmr{
     margin-left: 120px;
     width: 100%;
-}
-
-form{
-    width: 100%;
-}
-
-form input,form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 0 0 20px 0;
-    color: white;
-    border-radius: 6px;
-}
-
-.btn{
-    background-color: #ff2f2f;
-    color: white;
-    padding: 10px;
-    width: 120px;
-    border-radius: 6px;
-}
-
-footer{
-    background-color: #262626;
-    text-align: center;
-    color: white;
-    padding: 40px;
 }
 
 /*Perkeyframe-an*/

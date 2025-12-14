@@ -17,6 +17,7 @@
             <a href="#about-me">About Me</a>
             <a href="#myserv">Service</a>
             <a href="#contact-me">Contact Me</a>
+            <a href="https://www.youtube.com/@MichaelSatriaChanel">My Youtube Channel</a>
         </nav>
     </header>
     <script>
@@ -105,14 +106,16 @@
 
             <div id="works" class="tab-isi">
                 <ul>
-                    <li>INCH NOTE ANDROID APP</li>
-                    <li>ISOLATED (SHORT MOVIE) - TAHOE TEMPE PRODUCTION - RANK II AT MFEST UROZION</li>
-                    <li>CHILLING ON BATAVIA (NO COPYRIGHT INSTRUMENTAL)</li>
-                    <li>RAINY DAYS (NO COPYRIGHT INSTRUMENTAL)</li>
-                    <li>SAMUDERA WAKTU (SHORT MOVIE) - TAHOE TEMPE PRODUCTION</li>
-                    <li>WASTRA NUSANTARA (WEBSITE) - RANK II AT KBOF 2024</li>
+                    <li><a href="https://youtu.be/Hpmkid9NK50?si=ZTR0hu4GnWLYeCO5">Jejak Budaya (SHORT MOVIE) - TAHOE TEMPE PRODUCTION - RANK I at M-Fest 2025</a></li>
+                    <li><a href="https://youtu.be/uVj24jVACxI?si=mYyniI22_hhiiMAj">Lintasan Harapan (Short Movie) - TAHOE TEMPE PRODUCTION - RANK III at Fortelations 2025</a></li>
+                    <li><a href="https://youtu.be/gonEL0eSxD0?si=A_pjfAFwKrhY6K_P">SAMUDERA WAKTU (SHORT MOVIE) - TAHOE TEMPE PRODUCTION 2023</a></li>
                     <li>EXOTIC NIAS (WEBSITE)</li>
                     <li>NUSA HANDAYA (WEBSITE)</li>
+                    <li>WASTRA NUSANTARA (WEBSITE) - RANK II AT KBOF 2024</li>
+                    <li><a href="">ISOLATED (SHORT MOVIE) - TAHOE TEMPE PRODUCTION - RANK II AT MFEST UROZION</a></li>
+                    <li><a href="https://youtu.be/O09VO6gheHQ?si=jFZrfmBEunlAGNkv">CHILLING ON BATAVIA (NO COPYRIGHT INSTRUMENTAL)</a></li>
+                    <li><a href="https://youtu.be/ByeFNoA6Nfc?si=XaT_UMFD-510H3q1">RAINY DAYS (NO COPYRIGHT INSTRUMENTAL)</a></li>
+                    <li>INCH NOTE ANDROID APP</li>
                 </ul>
             </div>
             <a class="pdf-download" href="./pdf/MICHAEL SATRIA NUGROHO CV.pdf">Download CV!</a>
@@ -148,7 +151,7 @@
 
     <div id="myserv">
         <h1>My Services</h1>
-        <div style="background-color: rgb(167, 255, 196); height: 8px; width: 150px; border-radius: 10px;margin-top: 15px; margin-bottom: 75px; margin-left: auto; margin-right: auto;"></div>
+        <div style="background-color: #F4F4F4; height: 8px; width: 150px; border-radius: 10px;margin-top: 15px; margin-bottom: 75px; margin-left: auto; margin-right: auto;"></div>
         <div class="servicw">
             <a class="item-serv" href="https://api.whatsapp.com/send?phone=6282111557981&text=Hi%2C%20I%27m%20interested%20in%20your%20web%20design%20services!">
                 <div >
@@ -198,42 +201,10 @@
         </div>
         
         <div class="cmr">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" id="" placeholder="Your Name">
-                <input type="email" name="Email" id="" placeholder="Email">
-                <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-                <span id="msg"></span>
-            </form>
-            <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwXb9PCiK9FoqfqxZivYP7SE2rvsLlhmUQthdF-vQOLq8CSgPjqR51JL69Gt7Tck-4TbA/exec';
-                const form = document.forms['submit-to-google-sheet'];
-                const msg = document.getElementById('msg');
-              
-                form.addEventListener('submit', e => {
-                    e.preventDefault();
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                        .then(response => {
-                            msg.innerHTML = "Pesan Terkirim!";
-                            msg.style.color = "green";
-                            setTimeout(() => {
-                                msg.innerHTML = "";
-                            }, 3000);
-                            form.reset();
-                        })
-                        .catch(error => {
-                            msg.innerHTML = "Gagal mengirim pesan!";
-                            msg.style.color = "red";
-                        });
-                });
-              </script>
+            © 2025 Michael Satria Nugroho. All rights reserved.<br>
+            Kota Depok, Indonesia.
         </div>
     </div>
-
-    <footer>
-        <p><span style="color: #ff2f2f;"><b>&copy;2025</b></span> Michael Satria Nugroho</p>
-        <p><i>Depok, West Java, Indonesia</i></p>
-    </footer>
 
 
 
