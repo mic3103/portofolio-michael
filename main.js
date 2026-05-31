@@ -18,30 +18,49 @@ let index = 0;
 let charIndex = 0;
 let currentText = "";
 let isDeleting = false;
-const speed = 100;
+const typingSpeed = 200;        // Sangat lambat: 200ms per karakter
+const deletingSpeed = 120;      // Lambat: 120ms per karakter saat delete
+const pauseBetweenWords = 4000; // Jeda sangat lama: 4 detik sebelum pindah kata
+const pauseBeforeDelete = 3000; // Jeda sebelum mulai menghapus: 3 detik
 
 function typeEffect() {
     const typewriter = document.getElementById("typewriter");
     if (!typewriter) return;
 
     if (!isDeleting && charIndex < roles[index].length) {
+        // Mengetik karakter berikutnya
         currentText += roles[index][charIndex];
         charIndex++;
-        setTimeout(typeEffect, speed);
-    } else if (isDeleting && charIndex > 0) {
+        setTimeout(typeEffect, typingSpeed);
+    } 
+    else if (isDeleting && charIndex > 0) {
+        // Menghapus karakter berikutnya
         currentText = currentText.slice(0, -1);
         charIndex--;
-        setTimeout(typeEffect, speed / 2);
-    } else {
-        isDeleting = !isDeleting;
-        if (!isDeleting) {
+        setTimeout(typeEffect, deletingSpeed);
+    } 
+    else {
+        if (!isDeleting && charIndex === roles[index].length) {
+            // Selesai mengetik semua karakter, berhenti sebentar
+            isDeleting = true;
+            setTimeout(typeEffect, pauseBeforeDelete);
+        } 
+        else if (isDeleting && charIndex === 0) {
+            // Selesai menghapus semua karakter, pindah ke role berikutnya
+            isDeleting = false;
             index = (index + 1) % roles.length;
+            setTimeout(typeEffect, pauseBetweenWords);
         }
-        setTimeout(typeEffect, 1000);
     }
 
-    typewriter.innerHTML = `<mark style="background-color: #22e6e2ff; color:#005461;">${currentText}</mark>`;
+    // Update tampilan dengan efek mark yang lebih bagus
+    typewriter.innerHTML = `<mark style="background-color: #22e6e2ff; color:#005461;  display: inline-block; transition: all 0.3s ease;">${currentText}</mark>`;
 }
+
+// Initialize
+document.addEventListener("DOMContentLoaded", () => {
+    typeEffect();
+});
 
 // Tab switching functionality
 function initTabs() {
