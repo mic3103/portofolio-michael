@@ -71,6 +71,10 @@ button {
     top: 20px; /* Set initial position */
 }
 
+brand{
+    flex-shrink: 0;
+}
+
 .brand a {
     color: var(--text);
     font-weight: 700;
@@ -86,6 +90,7 @@ button {
     height: 48px;
     border-radius: 18px;
     place-items: center;
+    flex-shrink: 0;
 }
 
 .navbar {
@@ -183,6 +188,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
+    padding: 12px 0px;
     color: var(--text);
     font-size: 1.2rem;
     font-weight: 600;
@@ -549,6 +555,7 @@ main {
 
 @media (max-width: 768px) {
     .header {
+        backdrop-filter: none !important;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 18px 18px;
