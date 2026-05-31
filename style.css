@@ -71,7 +71,7 @@ button {
     top: 20px; /* Set initial position */
 }
 
-brand{
+.brand{
     flex-shrink: 0;
 }
 
@@ -181,6 +181,17 @@ main {
     max-width: 620px;
     color: var(--muted);
     line-height: 1.85;
+}
+
+#typewriter::after {
+    content: "|";
+    animation: blink 0.8s steps(1) infinite;
+    color: var(--accent);
+}
+
+.role-text strong {
+    position: absolute;
+    left: 60px;
 }
 
 .role-text {
